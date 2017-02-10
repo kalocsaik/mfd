@@ -1,0 +1,28 @@
+{
+  "name": "mfd_mini-project",
+  "version": "1.0.0",
+  "description": "MFD mini project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalocsaik/mfd.git"
+  },
+  "author": "Krisztian_Kalocsai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalocsaik/mfd/issues"
+  },
+  "homepage": "https://github.com/kalocsaik/mfd#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
