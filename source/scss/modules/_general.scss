@@ -3,11 +3,10 @@
 }
 // Small screens
 @media only screen {
-
-  .color{
-    width: 100%;
-    background-color: $red;
-  }
+    .color {
+        width: 100%;
+        background-color: $red;
+    }
 
     ul > li {
         display: inline-block;
@@ -21,13 +20,15 @@
 
             &:last-of-type {
                 border-top: 1px solid $light-grey;
-                border-bottom: 3px double $red;
-
             }
         }
 
         .header-info {
             margin: 1.5rem 0;
+
+            .header-contact {
+                text-align: right;
+            }
         }
 
         .navigation {
@@ -47,11 +48,17 @@
             input {
                 border: 0;
             }
+
+            .header-search {
+                text-align: right;
+            }
         }
     }
 
     #hero {
         .row {
+            border-top: 5px double $red;
+            box-shadow: 0 -5px 0 $red;
             color: $white;
             min-height: 100vh;
             background: url("../img/hero.jpg") no-repeat center center;
@@ -62,6 +69,16 @@
         .row div {
             padding: 2.5rem 5rem 1rem;
             background-color: transparentize(black, .3);
+        }
+
+        button {
+            background-color: $red;
+            color: $white;
+            line-height: 3;
+            border: 0;
+            text-transform: uppercase;
+            margin: 1rem 0;
+            padding: 0 1rem;
         }
     }
 
@@ -122,10 +139,8 @@
         }
     }
 
-    .wrapper-red{
-      margin-top: 2.125rem;
-
-
+    .wrapper-red {
+        margin-top: 2.125rem;
     }
 
     #newsletter {
@@ -137,6 +152,11 @@
         button {
             background-color: $light-red;
             color: $white;
+            margin-left: 1rem;
+        }
+
+        input {
+            width: 15rem;
         }
 
         button,
@@ -145,6 +165,10 @@
             border: 0;
             text-transform: uppercase;
             padding: 0 1rem;
+        }
+
+        .newsletter-input {
+            text-align: right;
         }
     }
 
@@ -159,6 +183,52 @@
         .blog-entry {
             margin-bottom: 1.750rem;
         }
+    }
+
+    .detail-item {
+        .detail-item-small {
+            img {
+                width: 100%;
+                border: 1px solid $light-grey;
+            }
+        }
+
+        .detail-item-selected {
+            border: 1px solid $light-grey;
+        }
+
+        .detail-tabs {
+            -webkit-column-count: 2;
+            /* Chrome, Safari, Opera */
+            -moz-column-count: 2;
+            /* Firefox */
+            column-count: 2;
+        }
+
+        .detail-item-description {
+            input {
+                width: 100%;
+                line-height: 3;
+            }
+
+            .detail-button {
+                margin: 1.250rem 0;
+
+                a {
+                    font-size: 1.5rem;
+                    color: $white;
+                    background-color: $red;
+                    text-transform: uppercase;
+                    padding: 0 1.50rem;
+                }
+            }
+        }
+
+
+    }
+
+    .text-align-right {
+        text-align: right;
     }
 }
 /* Define mobile styles */

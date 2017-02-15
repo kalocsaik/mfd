@@ -207,10 +207,11 @@ h6 {
   header .row {
     align-items: center; }
     header .row:last-of-type {
-      border-top: 1px solid #ededed;
-      border-bottom: 3px double #f45a40; }
+      border-top: 1px solid #ededed; }
   header .header-info {
     margin: 1.5rem 0; }
+    header .header-info .header-contact {
+      text-align: right; }
   header .navigation {
     padding: 0.875rem 0; }
     header .navigation .main-nav ul li a {
@@ -218,7 +219,11 @@ h6 {
       display: inline-block; }
     header .navigation input {
       border: 0; }
+    header .navigation .header-search {
+      text-align: right; }
   #hero .row {
+    border-top: 5px double #f45a40;
+    box-shadow: 0 -5px 0 #f45a40;
     color: #ffffff;
     min-height: 100vh;
     background: url("../img/hero.jpg") no-repeat center center;
@@ -227,6 +232,14 @@ h6 {
   #hero .row div {
     padding: 2.5rem 5rem 1rem;
     background-color: rgba(0, 0, 0, 0.7); }
+  #hero button {
+    background-color: #f45a40;
+    color: #ffffff;
+    line-height: 3;
+    border: 0;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    padding: 0 1rem; }
   .article img,
   .shoe-header img {
     width: 100%; }
@@ -267,20 +280,49 @@ h6 {
     padding: 2rem 0; }
   #newsletter button {
     background-color: #ff674f;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-left: 1rem; }
+  #newsletter input {
+    width: 15rem; }
   #newsletter button,
   #newsletter input {
     line-height: 3;
     border: 0;
     text-transform: uppercase;
     padding: 0 1rem; }
+  #newsletter .newsletter-input {
+    text-align: right; }
   footer {
     padding: 1.5rem 0;
     background-color: #2a2d34; }
     footer h2 {
       margin-bottom: 1.250rem; }
     footer .blog-entry {
-      margin-bottom: 1.750rem; } }
+      margin-bottom: 1.750rem; }
+  .detail-item .detail-item-small img {
+    width: 100%;
+    border: 1px solid #ededed; }
+  .detail-item .detail-item-selected {
+    border: 1px solid #ededed; }
+  .detail-item .detail-tabs {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2; }
+  .detail-item .detail-item-description input {
+    width: 100%;
+    line-height: 3; }
+  .detail-item .detail-item-description .detail-button {
+    margin: 1.250rem 0; }
+    .detail-item .detail-item-description .detail-button a {
+      font-size: 1.5rem;
+      color: #ffffff;
+      background-color: #f45a40;
+      text-transform: uppercase;
+      padding: 0 1.50rem; }
+  .text-align-right {
+    text-align: right; } }
 
 /* Define mobile styles */
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
