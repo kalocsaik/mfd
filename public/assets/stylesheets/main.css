@@ -95,6 +95,8 @@ p, a {
     body > * {
       background-color: #ffffff;
       width: 1170px; }
+    body > .hero {
+      width: 100%; }
     body .row {
       display: flex;
       flex-wrap: wrap; }
@@ -145,7 +147,7 @@ p, a {
     body .row .large-2 {
       flex: 0 0 calc(16.66% - 30px); }
     body .row .large-3 {
-      flex: 0 0 25%; }
+      flex: 0 0 calc(25% - 30px); }
     body .row .large-4 {
       flex: 0 0 calc(33.33% - 30px); }
     body .row .large-5 {
