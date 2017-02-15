@@ -5,8 +5,7 @@
 
 // Small screens
 @media only screen {
-
-    body {
+      body {
         display: flex;
         justify-content: center;
 
@@ -14,11 +13,6 @@
             background-color: $white;
             max-width: 1170px;
         }
-
-
-
-
-        .main {}
 
         .row {
             display: flex;
@@ -78,6 +72,11 @@
             }
         }
     }
+
+    .hero{
+      height: 100vh;
+      background: url(../img/hero.jpg);
+    }
 }
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {}
@@ -94,9 +93,7 @@
 
             & > * {
                 flex: 0 1 auto;
-
             }
-
 
             .large-1 {
                 flex: 0 0 calc((100% - (11 * 30px)) / 12);
@@ -108,7 +105,6 @@
 
             .large-3 {
                 flex: 0 0 calc((100% - (3 * 30px)) / 4);
-
             }
 
             .large-4 {
@@ -146,9 +142,8 @@
             .large-12 {
                 flex: 0 0 100%;
             }
-
-
         }
     }
+
 }
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */

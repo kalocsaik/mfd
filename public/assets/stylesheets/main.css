@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,48 +46,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@font-face {
-  font-family: Eveleth;
-  font-weight: normal;
-  src: url("../fonts/eveleth-thin.otf"); }
-
-@font-face {
-  font-family: Eveleth;
-  font-weight: bold;
-  src: url("../fonts/eveleth-regular.otf"); }
-
-@font-face {
-  font-family: Brown;
-  src: url("../fonts/brown-regular.otf"); }
-
-h1 {
-  font-family: Eveleth;
-  font-weight: bold;
-  font-size: 1.25em; }
-
-h2 {
-  font-family: Eveleth;
-  font-weight: bold;
-  font-size: 1em; }
-
-h3 {
-  font-family: Eveleth;
-  font-weight: bold;
-  font-size: 0.750em; }
-
-h4 {
-  font-family: Eveleth;
-  font-weight: normal;
-  font-size: 0.750em; }
-
-.large-p {
-  font-size: 1em; }
-
-p, a {
-  font-size: 0.875em; }
-
-.small-p {
-  font-size: 0.750em; }
+body {
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  color: #7e7f84; }
 
 * {
   box-sizing: border-box; }
@@ -127,7 +90,10 @@ p, a {
       body .row .small-11 {
         flex: 0 0 91.66%; }
       body .row .small-12 {
-        flex: 0 0 100%; } }
+        flex: 0 0 100%; }
+  .hero {
+    height: 100vh;
+    background: url(../img/hero.jpg); } }
 
 /* Define mobile styles */
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */

@@ -1,52 +1,38 @@
-@font-face {
-    font-family: Eveleth;
-    font-weight: normal;
-    src: url("../fonts/eveleth-thin.otf");
-}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-@font-face {
-    font-family: Eveleth;
-    font-weight: bold;
-    src: url("../fonts/eveleth-regular.otf");
-}
+$body-font: 'Arial', sans-serif;
+$headline-font: 'PT Sans', sans-serif;
 
-@font-face {
-    font-family: Brown;
-    src: url("../fonts/brown-regular.otf");
+body{
+  font-size: 12px;
+  font-family: $body-font;
+  color: $grey;
 }
 
 h1 {
-    font-family: Eveleth;
-    font-weight: bold;
-    font-size: 1.25em;
+
 }
 
 h2 {
-    font-family: Eveleth;
-    font-weight: bold;
-    font-size: 1em;
+
 }
 
 h3 {
-    font-family: Eveleth;
-    font-weight: bold;
-    font-size: 0.750em;
+
 }
 
 h4 {
-    font-family: Eveleth;
-    font-weight: normal;
-    font-size: 0.750em;
+
 }
 
 .large-p {
-    font-size: 1em;
+
 }
 
 p, a {
-    font-size: 0.875em;
+
 }
 
 .small-p {
-    font-size: 0.750em;
+
 }
