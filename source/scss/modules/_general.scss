@@ -1,0 +1,148 @@
+// Small screens
+@media only screen {
+    body {
+        display: flex;
+        justify-content: center;
+
+        & > * {
+            background-color: $white;
+            width: 1170px;
+        }
+
+        .main {}
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+            & > * {
+                flex: 0 1 auto;
+            }
+
+            .small-1 {
+                flex: 0 0 8.33%;
+            }
+
+            .small-2 {
+                flex: 0 0 16.66%;
+            }
+
+            .small-3 {
+                flex: 0 0 25%;
+            }
+
+            .small-4 {
+                flex: 0 0 33.33%;
+            }
+
+            .small-5 {
+                flex: 0 0 41.66%;
+            }
+
+            .small-6 {
+                flex: 0 0 50%;
+            }
+
+            .small-7 {
+                flex: 0 0 58.33%;
+            }
+
+            .small-8 {
+                flex: 0 0 66.66%;
+            }
+
+            .small-9 {
+                flex: 0 0 75%;
+            }
+
+            .small-10 {
+                flex: 0 0 83.33%;
+            }
+
+            .small-11 {
+                flex: 0 0 91.66%;
+            }
+
+            .small-12 {
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {}
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+// Large screens
+@media only screen and (min-width: 40.063em) {}
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 40.063em) and (max-width: 90em) {
+    body {
+        .row {
+            display: flex;
+            flex-wrap: nowrap;
+
+            & > * {
+                flex: 0 1 auto;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            & > *:last-of-type {
+                padding-right: 0;
+            }
+
+            & > *:first-of-type {
+                padding-left: 0;
+            }
+
+            .large-1 {
+                flex: 0 0 8.33%;
+            }
+
+            .large-2 {
+                flex: 0 0 calc(16.66% - 30px);
+            }
+
+            .large-3 {
+                flex: 0 0 25%;
+            }
+
+            .large-4 {
+                flex: 0 0 calc(33.33% - 30px);
+            }
+
+            .large-5 {
+                flex: 0 0 41.66%;
+            }
+
+            .large-6 {
+                flex: 0 0 calc(50% - 30px);
+            }
+
+            .large-7 {
+                flex: 0 0 58.33%;
+            }
+
+            .large-8 {
+                flex: 0 0 66.66%;
+            }
+
+            .large-9 {
+                flex: 0 0 75%;
+            }
+
+            .large-10 {
+                flex: 0 0 83.33%;
+            }
+
+            .large-11 {
+                flex: 0 0 91.66%;
+            }
+
+            .large-12 {
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */

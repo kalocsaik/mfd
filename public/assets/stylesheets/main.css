@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: Eveleth;
+  font-weight: normal;
+  src: url("../fonts/eveleth-thin.otf"); }
+
+@font-face {
+  font-family: Eveleth;
+  font-weight: bold;
+  src: url("../fonts/eveleth-regular.otf"); }
+
+@font-face {
+  font-family: Brown;
+  src: url("../fonts/brown-regular.otf"); }
+
+h1 {
+  font-family: Eveleth;
+  font-weight: bold;
+  font-size: 1.25em; }
+
+h2 {
+  font-family: Eveleth;
+  font-weight: bold;
+  font-size: 1em; }
+
+h3 {
+  font-family: Eveleth;
+  font-weight: bold;
+  font-size: 0.750em; }
+
+h4 {
+  font-family: Eveleth;
+  font-weight: normal;
+  font-size: 0.750em; }
+
+.large-p {
+  font-size: 1em; }
+
+p, a {
+  font-size: 0.875em; }
+
+.small-p {
+  font-size: 0.750em; }
+
+@media only screen {
+  body {
+    display: flex;
+    justify-content: center; }
+    body > * {
+      background-color: #ffffff;
+      width: 1170px; }
+    body .row {
+      display: flex;
+      flex-wrap: wrap; }
+      body .row > * {
+        flex: 0 1 auto; }
+      body .row .small-1 {
+        flex: 0 0 8.33%; }
+      body .row .small-2 {
+        flex: 0 0 16.66%; }
+      body .row .small-3 {
+        flex: 0 0 25%; }
+      body .row .small-4 {
+        flex: 0 0 33.33%; }
+      body .row .small-5 {
+        flex: 0 0 41.66%; }
+      body .row .small-6 {
+        flex: 0 0 50%; }
+      body .row .small-7 {
+        flex: 0 0 58.33%; }
+      body .row .small-8 {
+        flex: 0 0 66.66%; }
+      body .row .small-9 {
+        flex: 0 0 75%; }
+      body .row .small-10 {
+        flex: 0 0 83.33%; }
+      body .row .small-11 {
+        flex: 0 0 91.66%; }
+      body .row .small-12 {
+        flex: 0 0 100%; } }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 40.063em) and (max-width: 90em) {
+  body .row {
+    display: flex;
+    flex-wrap: nowrap; }
+    body .row > * {
+      flex: 0 1 auto;
+      padding-right: 15px;
+      padding-left: 15px; }
+    body .row > *:last-of-type {
+      padding-right: 0; }
+    body .row > *:first-of-type {
+      padding-left: 0; }
+    body .row .large-1 {
+      flex: 0 0 8.33%; }
+    body .row .large-2 {
+      flex: 0 0 calc(16.66% - 30px); }
+    body .row .large-3 {
+      flex: 0 0 25%; }
+    body .row .large-4 {
+      flex: 0 0 calc(33.33% - 30px); }
+    body .row .large-5 {
+      flex: 0 0 41.66%; }
+    body .row .large-6 {
+      flex: 0 0 calc(50% - 30px); }
+    body .row .large-7 {
+      flex: 0 0 58.33%; }
+    body .row .large-8 {
+      flex: 0 0 66.66%; }
+    body .row .large-9 {
+      flex: 0 0 75%; }
+    body .row .large-10 {
+      flex: 0 0 83.33%; }
+    body .row .large-11 {
+      flex: 0 0 91.66%; }
+    body .row .large-12 {
+      flex: 0 0 100%; } }
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
