@@ -1,11 +1,9 @@
-*{
-  box-sizing: border-box;
-
+* {
+    box-sizing: border-box;
 }
-
 // Small screens
 @media only screen {
-      body {
+    body {
         display: flex;
         justify-content: center;
 
@@ -73,9 +71,57 @@
         }
     }
 
-    .hero{
-      height: 100vh;
-      background: url(../img/hero.jpg);
+    #hero {
+        color: $white;
+        height: 100vh;
+        background: url("../img/hero.jpg");
+
+
+        div{
+          background-color: transparentize($dark-grey, .2);
+
+        }
+    }
+
+    .article,
+    .shoe-header {
+        img {
+            width: 100%;
+        }
+    }
+
+    .shoe-header{
+      border: 1px solid $light-grey;
+
+    }
+
+    .shoe-content{
+      border-left: 1px solid $light-grey;
+      border-right: 1px solid $light-grey;
+      border-bottom: 1px solid $light-grey;
+    }
+
+    #blog {
+        margin-top: 87px;
+    }
+
+    #products{
+
+    }
+
+    .shoe-buy {
+        background-color: $red;
+    }
+
+    #newsletter {
+      margin-top: 35px;
+        background-color: $red;
+    }
+
+    footer {
+        background-color: $dark-grey;
+
+
     }
 }
 /* Define mobile styles */
@@ -144,6 +190,5 @@
             }
         }
     }
-
 }
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */

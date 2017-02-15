@@ -47,9 +47,29 @@ table {
   border-spacing: 0; }
 
 body {
-  font-size: 12px;
+  font-size: 0.750rem;
   font-family: "Arial", sans-serif;
-  color: #7e7f84; }
+  color: #7e7f84;
+  line-height: 1.3; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 3.75rem; }
+
+h2 {
+  font-size: 1.375rem; }
+
+#blog h2 {
+  color: #f45a40; }
+
+#newsletter, footer h2 {
+  color: #ffffff; }
+
+footer p, h6 {
+  font-size: 0.875rem; }
 
 * {
   box-sizing: border-box; }
@@ -91,9 +111,30 @@ body {
         flex: 0 0 91.66%; }
       body .row .small-12 {
         flex: 0 0 100%; }
-  .hero {
+  #hero {
+    color: #ffffff;
     height: 100vh;
-    background: url(../img/hero.jpg); } }
+    background: url("../img/hero.jpg"); }
+    #hero div {
+      background-color: rgba(42, 45, 52, 0.8); }
+  .article img,
+  .shoe-header img {
+    width: 100%; }
+  .shoe-header {
+    border: 1px solid #ededed; }
+  .shoe-content {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed; }
+  #blog {
+    margin-top: 87px; }
+  .shoe-buy {
+    background-color: #f45a40; }
+  #newsletter {
+    margin-top: 35px;
+    background-color: #f45a40; }
+  footer {
+    background-color: #2a2d34; } }
 
 /* Define mobile styles */
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
