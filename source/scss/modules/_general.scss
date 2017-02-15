@@ -26,6 +26,22 @@
 
             .header-contact {
                 text-align: right;
+                text-transform: uppercase;
+                font-size: 0.875rem;
+
+                & > * {
+                    margin-left: 1rem;
+                    white-space: nowrap;
+                }
+
+                i{
+                  margin-right: 0.5rem;
+                }
+
+                .checkout {
+                    background-color: $light-grey;
+
+                }
             }
         }
 
@@ -181,9 +197,16 @@
         .blog-entry {
             margin-bottom: 1.750rem;
         }
+
+        ul > li {
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+        }
     }
 
     .detail-item {
+
         .detail-item-small {
             img {
                 width: 100%;
@@ -193,15 +216,10 @@
 
         .detail-item-selected {
             border: 1px solid $light-grey;
+            margin-bottom: 1.5rem;
         }
 
-        .detail-tabs {
-            -webkit-column-count: 2;
-            /* Chrome, Safari, Opera */
-            -moz-column-count: 2;
-            /* Firefox */
-            column-count: 2;
-        }
+
 
         .detail-item-description {
             input {
@@ -221,6 +239,14 @@
                 }
             }
         }
+
+        ul > li {
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+        }
+
+        margin-bottom: 3rem;
     }
 
     .text-align-right {
@@ -229,8 +255,6 @@
 }
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
-
-
     header {
         ul > li {
             background-color: $red;
@@ -251,6 +275,7 @@
         .header-nav {
             order: 2;
         }
+
         .navigation {
             padding: 0;
         }
@@ -268,37 +293,51 @@
                 }
             }
         }
+      .header-info .header-contact {
+        text-align: center;
+      }
+
     }
 
     #hero .row div {
-    padding:0;
-}
+        padding: 0;
+    }
 
-#newsletter .newsletter-input {
-    text-align: center;
-}
+    #newsletter .newsletter-input {
+        text-align: center;
+    }
 
+    #newsletter input {
+        width: 90%;
+        padding: 0;
+    }
 
-#newsletter input {
-
-    width: 80%;
-    padding: 0;
-}
-
-#newsletter button {
-    width: 50%;
-    margin: 0;
-}
+    #newsletter button {
+        width: 90%;
+        margin: 0;
+    }
 }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 // Large screens
 @media only screen and (min-width: 40.063em) {}
 /* min-width 1025px, large screens */
-@media only screen and (min-width: 40.063em) and (max-width: 90em) {
+@media only screen and (min-width: 40.063em) {
     ul > li {
         display: inline-block;
         zoom: 1;
         *display: inline;
+    }
+
+    .collapse {
+        flex-wrap: wrap !important;
+    }
+
+    .detail-tabs {
+        -webkit-column-count: 2;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 2;
+        /* Firefox */
+        column-count: 2;
     }
 }
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
