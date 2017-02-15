@@ -51,11 +51,17 @@ table {
 
 @media only screen {
   body {
-    display: flex;
+    display: flex column;
     justify-content: center; }
-    body > * {
-      background-color: #ffffff;
-      max-width: 1170px; }
+    body .wrapper-full {
+      display: flex;
+      justify-content: center; }
+      body .wrapper-full .wrapper {
+        width: 1170px; }
+    body .wrapper-dark {
+      background-color: #2a2d34; }
+    body .wrapper-red {
+      background-color: #f45a40; }
     body .row {
       display: flex;
       flex-wrap: wrap;
@@ -191,6 +197,9 @@ h6 {
   box-sizing: border-box; }
 
 @media only screen {
+  .color {
+    width: 100%;
+    background-color: #f45a40; }
   ul > li {
     display: inline-block;
     zoom: 1;
@@ -251,21 +260,20 @@ h6 {
           display: block; }
         #products .shoe-item .shoe-buy a:hover {
           background-color: #ff674f; }
-  #newsletter {
-    margin-top: 2.125rem;
-    background-color: #f45a40;
+  .wrapper-red {
+    margin-top: 2.125rem; }
+  #newsletter .row {
+    align-items: center;
     padding: 2rem 0; }
-    #newsletter .row {
-      align-items: center; }
-    #newsletter button {
-      background-color: #ff674f;
-      color: #ffffff; }
-    #newsletter button,
-    #newsletter input {
-      line-height: 3;
-      border: 0;
-      text-transform: uppercase;
-      padding: 0 1rem; }
+  #newsletter button {
+    background-color: #ff674f;
+    color: #ffffff; }
+  #newsletter button,
+  #newsletter input {
+    line-height: 3;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0 1rem; }
   footer {
     padding: 1.5rem 0;
     background-color: #2a2d34; }

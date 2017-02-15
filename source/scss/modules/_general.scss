@@ -4,6 +4,11 @@
 // Small screens
 @media only screen {
 
+  .color{
+    width: 100%;
+    background-color: $red;
+  }
+
     ul > li {
         display: inline-block;
         zoom: 1;
@@ -117,13 +122,16 @@
         }
     }
 
-    #newsletter {
-        margin-top: 2.125rem;
-        background-color: $red;
-        padding: 2rem 0;
+    .wrapper-red{
+      margin-top: 2.125rem;
 
+
+    }
+
+    #newsletter {
         .row {
             align-items: center;
+            padding: 2rem 0;
         }
 
         button {

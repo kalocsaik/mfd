@@ -4,12 +4,24 @@
 // Small screens
 @media only screen {
     body {
-        display: flex;
+        display: flex column;
         justify-content: center;
 
-        & > * {
-            background-color: $white;
-            max-width: 1170px;
+        .wrapper-full {
+            display: flex;
+            justify-content: center;
+
+            .wrapper {
+                width: 1170px;
+            }
+
+        }
+        .wrapper-dark{
+          background-color: $dark-grey;
+        }
+
+        .wrapper-red{
+          background-color: $red;
         }
 
         .row {
@@ -70,11 +82,6 @@
             }
         }
     }
-
-
-
-
-
 }
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {}
