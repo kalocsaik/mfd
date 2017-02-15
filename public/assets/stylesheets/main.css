@@ -46,31 +46,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  font-size: 0.750rem;
-  font-family: "Arial", sans-serif;
-  color: #7e7f84;
-  line-height: 1.3; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase; }
-
-h1 {
-  font-size: 3.75rem; }
-
-h2 {
-  font-size: 1.375rem; }
-
-#blog h2 {
-  color: #f45a40; }
-
-#newsletter, footer h2 {
-  color: #ffffff; }
-
-footer p, h6 {
-  font-size: 0.875rem; }
-
 * {
   box-sizing: border-box; }
 
@@ -110,31 +85,7 @@ footer p, h6 {
       body .row .small-11 {
         flex: 0 0 91.66%; }
       body .row .small-12 {
-        flex: 0 0 100%; }
-  #hero {
-    color: #ffffff;
-    height: 100vh;
-    background: url("../img/hero.jpg"); }
-    #hero div {
-      background-color: rgba(42, 45, 52, 0.8); }
-  .article img,
-  .shoe-header img {
-    width: 100%; }
-  .shoe-header {
-    border: 1px solid #ededed; }
-  .shoe-content {
-    border-left: 1px solid #ededed;
-    border-right: 1px solid #ededed;
-    border-bottom: 1px solid #ededed; }
-  #blog {
-    margin-top: 87px; }
-  .shoe-buy {
-    background-color: #f45a40; }
-  #newsletter {
-    margin-top: 35px;
-    background-color: #f45a40; }
-  footer {
-    background-color: #2a2d34; } }
+        flex: 0 0 100%; } }
 
 /* Define mobile styles */
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -171,4 +122,159 @@ footer p, h6 {
     body .row .large-12 {
       flex: 0 0 100%; } }
 
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+body {
+  font-size: 0.750rem;
+  font-family: "Arial", sans-serif;
+  color: #7e7f84;
+  line-height: 1.3; }
+
+a,
+a:active,
+a:visited {
+  color: #7e7f84;
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 3.75rem; }
+
+h2 {
+  font-size: 1.375rem; }
+
+h3 {
+  font-size: 1.125rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+h6 {
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff; }
+
+.main-nav {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase; }
+
+#blog h2 {
+  color: #f45a40; }
+
+#newsletter,
+footer h2 {
+  color: #ffffff; }
+
+footer p,
+h6 {
+  font-size: 0.875rem; }
+
+.shoe-price {
+  color: #f45a40;
+  font-size: 0.875rem; }
+
+.shoe-buy a {
+  color: #ffffff;
+  font-size: 0.875rem; }
+
+.popular {
+  text-align: center;
+  margin-top: 4rem; }
+
+* {
+  box-sizing: border-box; }
+
+@media only screen {
+  ul > li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+  header .row {
+    align-items: center; }
+    header .row:last-of-type {
+      border-top: 1px solid #ededed;
+      border-bottom: 3px double #f45a40; }
+  header .header-info {
+    margin: 1.5rem 0; }
+  header .navigation {
+    padding: 0.875rem 0; }
+    header .navigation .main-nav ul li a {
+      padding-right: 2rem;
+      display: inline-block; }
+    header .navigation input {
+      border: 0; }
+  #hero .row {
+    color: #ffffff;
+    min-height: 100vh;
+    background: url("../img/hero.jpg") no-repeat center center;
+    background-size: cover;
+    align-items: center; }
+  #hero .row div {
+    padding: 2.5rem 5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .article img,
+  .shoe-header img {
+    width: 100%; }
+  #blog .row > div {
+    margin-top: 100px; }
+  #products {
+    margin-top: 1.250rem; }
+    #products .shoe-item {
+      margin-top: 1.875rem; }
+      #products .shoe-item .shoe-header {
+        border: 1px solid #ededed;
+        padding: 0.875rem; }
+      #products .shoe-item .shoe-content {
+        padding: 1.250rem;
+        border-left: 1px solid #ededed;
+        border-right: 1px solid #ededed;
+        border-bottom: 1px solid #ededed; }
+        #products .shoe-item .shoe-content .shoe-details {
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid #ededed;
+          margin-top: 0.625rem;
+          padding-top: 0.750rem; }
+      #products .shoe-item .shoe-buy {
+        background-color: #f45a40; }
+        #products .shoe-item .shoe-buy a {
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 3rem;
+          width: 100%;
+          display: block; }
+        #products .shoe-item .shoe-buy a:hover {
+          background-color: #ff674f; }
+  #newsletter {
+    margin-top: 2.125rem;
+    background-color: #f45a40;
+    padding: 2rem 0; }
+    #newsletter .row {
+      align-items: center; }
+    #newsletter button {
+      background-color: #ff674f;
+      color: #ffffff; }
+    #newsletter button,
+    #newsletter input {
+      line-height: 3;
+      border: 0;
+      text-transform: uppercase;
+      padding: 0 1rem; }
+  footer {
+    padding: 1.5rem 0;
+    background-color: #2a2d34; }
+    footer h2 {
+      margin-bottom: 1.250rem; }
+    footer .blog-entry {
+      margin-bottom: 1.750rem; } }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 1025px, large screens */
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
