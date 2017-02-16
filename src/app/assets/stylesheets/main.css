@@ -290,6 +290,11 @@ h6 {
     background-color: #ff674f;
     color: #ffffff;
     margin-left: 1rem; }
+    #newsletter button:hover {
+      cursor: pointer;
+      background-color: #2a2d34; }
+    #newsletter button:active {
+      background-color: black; }
   #newsletter input {
     width: 15rem; }
   #newsletter button,
@@ -311,6 +316,8 @@ h6 {
       display: inline-block;
       zoom: 1;
       *display: inline; }
+    footer a:hover {
+      color: #ededed; }
   .detail-item {
     padding-top: 2rem;
     margin-bottom: 3rem; }

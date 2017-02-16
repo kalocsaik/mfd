@@ -171,6 +171,16 @@
             background-color: $light-red;
             color: $white;
             margin-left: 1rem;
+
+
+            &:hover{
+              cursor: pointer;
+              background-color: $dark-grey;
+            }
+
+            &:active{
+              background-color: black;
+            }
         }
 
         input {
@@ -206,6 +216,10 @@
             display: inline-block;
             zoom: 1;
             *display: inline;
+        }
+
+        a:hover{
+          color: $light-grey;
         }
     }
 
@@ -324,19 +338,26 @@
         padding: 0;
     }
 
-    #newsletter .newsletter-input {
-        text-align: center;
+    #newsletter {
+
+      .newsletter-input {
+          text-align: center;
+      }
+
+      input {
+          width: 90%;
+          padding: 0;
+      }
+
+      button {
+          width: 90%;
+          margin: 0;
+
+
+      }
+
     }
 
-    #newsletter input {
-        width: 90%;
-        padding: 0;
-    }
-
-    #newsletter button {
-        width: 90%;
-        margin: 0;
-    }
 }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 // Large screens
