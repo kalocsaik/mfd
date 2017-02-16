@@ -54,6 +54,7 @@ table {
     display: flex column;
     justify-content: center; }
     body .wrapper-full {
+      padding: 0 1rem;
       display: flex;
       justify-content: center; }
       body .wrapper-full .wrapper {
@@ -197,6 +198,8 @@ h6 {
   box-sizing: border-box; }
 
 @media only screen {
+  .shoe-collapse {
+    flex-wrap: wrap !important; }
   .color {
     width: 100%;
     background-color: #f45a40; }
@@ -248,6 +251,11 @@ h6 {
     text-transform: uppercase;
     margin: 1rem 0;
     padding: 0 1rem; }
+    #hero button:hover {
+      background-color: #ff674f;
+      cursor: pointer; }
+    #hero button:active {
+      background-color: #2a2d34; }
   .article img,
   .shoe-header img {
     width: 100%; }
@@ -382,10 +390,10 @@ h6 {
   #newsletter .newsletter-input {
     text-align: center; }
   #newsletter input {
-    width: 90%;
+    width: 100%;
     padding: 0; }
   #newsletter button {
-    width: 90%;
+    width: 100%;
     margin: 0; } }
 
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */

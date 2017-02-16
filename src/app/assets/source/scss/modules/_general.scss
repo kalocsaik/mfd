@@ -3,6 +3,10 @@
 }
 // Small screens
 @media only screen {
+.shoe-collapse{
+  flex-wrap: wrap !important;
+}
+
     .color {
         width: 100%;
         background-color: $red;
@@ -97,6 +101,16 @@
             text-transform: uppercase;
             margin: 1rem 0;
             padding: 0 1rem;
+
+            &:hover{
+              background-color: $light-red;
+              cursor: pointer;
+            }
+
+            &:active{
+
+              background-color: $dark-grey;
+            }
         }
     }
 
@@ -345,12 +359,12 @@
       }
 
       input {
-          width: 90%;
+          width: 100%;
           padding: 0;
       }
 
       button {
-          width: 90%;
+          width: 100%;
           margin: 0;
 
 
