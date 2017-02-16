@@ -1,28 +1,32 @@
-/*import { Component, OnInit } from '@angular/core';
-import { Ngform } from '@angular/form';
+import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 
 class Newsletter {
   contactname: string;
-  contactform: string;
+  contactemail: string;
   newstype: string;
-
 }
 
 @Component({
-  templateUrl: "./app/contact.component.html";
-
+  templateUrl: "./app/contact/contact.component.html"
 })
 
 export class ContactComponent implements OnInit{
   model:Newsletter = new Newsletter();
-  newstypedropdownvalues: Array<string>;
+  newsdropdown: Array<string>;
+
   hasBeenSubmitted: boolean;
 
   ngOnInit() {
-    this.newstypedropdownvalues = ['Baking', 'Dinners', 'Starters'];
+    this.newsdropdown = ['Baking', 'Dinners', 'Starters'];
     this.model.contactname = 'John';
     this.hasBeenSubmitted = false;
   }
 
-  register(form:NgForm)
-}*/
+  register(form:NgForm, event:Event){
+    event.preventDefault();
+    //save info to server via api
+    this.hasBeenSubmitted = true;
+  }
+}

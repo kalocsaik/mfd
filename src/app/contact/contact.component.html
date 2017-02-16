@@ -1,27 +1,27 @@
-<div>
+<div [hidden]="hasBeenSubmitted">
   <form (ngSubmit)="register(newsletterForm, $event)" #newsletterForm="ngForm" novalidate>
     <div>
       <label for="contactname">Name</label>
-      <input type="text" id="contactname" name="contactname" [(ngModel)]="model.contactname" required>
+      <input type="text" id="contactname" name="model.contactname" [(ngModel)]="model.contactname" required>
     </div>
 
     <div>
       <label for="contactemail">Email</label>
-      <input type="text" id="contactemail" name="contactemail" [(ngModel)]="model.contactemail" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$">
+      <input type="text" id="contactemail" name="model.contactemail" [(ngModel)]="model.contactemail" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$">
     </div>
 
     <div>
       <label for="newstype">Newstype</label>
       <select id="newstype" name="newstype" [(ngModel)]="model.newstype">
-        <option *ngFor="let item of newstypedropdownvalues" [value]="item">{{item}}</option>
+        <option *ngFor="let item of newsdropdown" [value]="item">{{item}}</option>
+
       </select>
     </div>
-
-    <span> Your name is {{model.contactname}}. Your email is {{model.contactemail.}}</span>
+    <!-- <span> Your name is {{model.contactname}}</span>-->
     <button type="submit">Submit request</button>
   </form>
 </div>
 
 <div>
-  <p [hidden]="!hasBeenSubmitted">You have submitted</p>
+  <p [hidden]="!hasBeenSubmitted">You have submitted {{model.contactname}} {{model.contactemail}}</p>
 </div>
