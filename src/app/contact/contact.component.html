@@ -1,25 +1,35 @@
-<div [hidden]="hasBeenSubmitted">
-  <form (ngSubmit)="register(newsletterForm, $event)" #newsletterForm="ngForm" novalidate>
-    <div>
-      <label for="contactname">Name</label>
-      <input type="text" id="contactname" name="model.contactname" [(ngModel)]="model.contactname" required>
-    </div>
+<div>
 
-    <div>
-      <label for="contactemail">Email</label>
-      <input type="text" id="contactemail" name="model.contactemail" [(ngModel)]="model.contactemail" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$">
-    </div>
+</div>
 
-    <div>
-      <label for="newstype">Newstype</label>
-      <select id="newstype" name="newstype" [(ngModel)]="model.newstype">
-        <option *ngFor="let item of newsdropdown" [value]="item">{{item}}</option>
 
-      </select>
-    </div>
-    <!-- <span> Your name is {{model.contactname}}</span>-->
-    <button type="submit">Submit request</button>
-  </form>
+
+<div class="wrapper-full" [hidden]="hasBeenSubmitted">
+		<div class="wrapper contact">
+			<div class="row">
+				<div class="small-6 large-6">
+					<h2>Contact Us</h2>
+          <form (ngSubmit)="register(newsletterForm, $event)" #newsletterForm="ngForm" novalidate>
+
+              <label for="contactname">Name</label>
+              <input type="text" id="contactname" name="model.contactname" [(ngModel)]="model.contactname" required>
+
+              <label for="contactemail">Email</label>
+              <input type="text" id="contactemail" name="model.contactemail" [(ngModel)]="model.contactemail" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$">
+
+            <!--  <label for="newstype">Newstype</label>
+              <select id="newstype" name="newstype" [(ngModel)]="model.newstype">
+                <option *ngFor="let item of newsdropdown" [value]="item">{{item}}</option>
+              </select>-->
+
+            <!-- <span> Your name is {{model.contactname}}</span>-->
+            <label for="textarea">Message </label><br><textarea name="name" rows="8" cols="80" id="textarea"></textarea><br>
+            <button type="submit">Submit request</button>
+          </form>
+
+
+				</div>
+			</div>
 </div>
 
 <div>

@@ -1,0 +1,83 @@
+@import url( 'https://fonts.googleapis.com/css?family=PT+Sans');
+$body-font: 'Arial', sans-serif;
+$headline-font: 'PT Sans', sans-serif;
+
+body {
+    font-size: 0.750rem;
+    font-family: $body-font;
+    color: $grey;
+    line-height: 1.3;
+}
+
+a,
+a:active,
+a:visited {
+    color: $grey;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $headline-font;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.75rem;
+}
+
+h2 {
+    font-size: 1.375rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+h6 {
+    font-family: $headline-font;
+    color: $white;
+
+}
+
+.main-nav{
+  font-family: $headline-font;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+#blog h2 {
+    color: $red;
+}
+
+#newsletter,
+footer h2 {
+    color: $white;
+}
+
+footer p,
+h6 {
+    font-size: 0.875rem;
+}
+
+.shoe-price {
+    color: $red;
+    font-size: 0.875rem;
+}
+
+.shoe-buy a {
+    color: $white;
+    font-size: 0.875rem;
+}
+
+.popular{
+  text-align: center;
+  margin-top: 4rem;
+}
