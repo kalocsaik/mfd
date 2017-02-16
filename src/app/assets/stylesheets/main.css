@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -50,17 +50,6 @@ table {
   box-sizing: border-box; }
 
 @media only screen {
-  input.ng-pristine{
-    background-color: lightyellow;
-  }
-  input.ng-touched.ng-invalid{
-    background-color: lightpink;
-  }
-
-  input.ng-touched.ng-valid{
-    background-color: lightgreen;
-  }
-
   body {
     display: flex column;
     justify-content: center; }
@@ -213,6 +202,9 @@ h6 {
     background-color: #f45a40; }
   ul > li {
     text-align: center; }
+  .border-shadow {
+    border-top: 5px double #f45a40;
+    box-shadow: 0 -5px 0 #f45a40; }
   header .row {
     align-items: center; }
     header .row:last-of-type {
@@ -240,8 +232,6 @@ h6 {
     header .navigation .header-search {
       text-align: right; }
   #hero .row {
-    border-top: 5px double #f45a40;
-    box-shadow: 0 -5px 0 #f45a40;
     color: #ffffff;
     min-height: 100vh;
     background: url("../img/hero.jpg") no-repeat center center;
@@ -322,6 +312,7 @@ h6 {
       zoom: 1;
       *display: inline; }
   .detail-item {
+    padding-top: 2rem;
     margin-bottom: 3rem; }
     .detail-item .detail-item-small img {
       width: 100%;
@@ -344,8 +335,16 @@ h6 {
       display: inline-block;
       zoom: 1;
       *display: inline; }
+  .contact {
+    padding-top: 2rem; }
   .text-align-right {
-    text-align: right; } }
+    text-align: right; }
+  input.ng-pristine {
+    background-color: lightyellow; }
+  input.ng-touched.ng-invalid {
+    background-color: lightpink; }
+  input.ng-touched.ng-valid {
+    background-color: lightgreen; } }
 
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {

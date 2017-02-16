@@ -5,7 +5,7 @@ import { DemoDataService } from "../shared/demo-data.service";
 
 @Component({
   template: `
-  <div class="wrapper-full detail-item">
+  <div class="wrapper-full detail-item border-shadow">
       <div class="wrapper">
         <div class="row">
           <div class="small-12 large-6">

@@ -1,5 +1,18 @@
 // Small screens
 @media only screen {
+
+  input.ng-pristine{
+    background-color: lightyellow;
+  }
+  input.ng-touched.ng-invalid{
+    background-color: lightpink;
+  }
+
+  input.ng-touched.ng-valid{
+    background-color: lightgreen;
+  }
+  
+
     body {
         display: flex;
         justify-content: center;

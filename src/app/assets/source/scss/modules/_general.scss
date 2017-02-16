@@ -12,6 +12,12 @@
         text-align: center;
     }
 
+.border-shadow{
+  border-top: 5px double $red;
+  box-shadow: 0 -5px 0 $red;
+
+}
+
     header {
         .row {
             align-items: center;
@@ -71,8 +77,6 @@
 
     #hero {
         .row {
-            border-top: 5px double $red;
-            box-shadow: 0 -5px 0 $red;
             color: $white;
             min-height: 100vh;
             background: url("../img/hero.jpg") no-repeat center center;
@@ -206,6 +210,7 @@
     }
 
     .detail-item {
+      padding-top: 2rem;
 
         .detail-item-small {
             img {
@@ -249,8 +254,24 @@
         margin-bottom: 3rem;
     }
 
+    .contact{
+      padding-top: 2rem;
+    }
+
     .text-align-right {
         text-align: right;
+    }
+
+    input.ng-pristine {
+      background-color: lightyellow;
+    }
+
+    input.ng-touched.ng-invalid{
+      background-color: lightpink;
+    }
+
+    input.ng-touched.ng-valid{
+      background-color: lightgreen;
     }
 }
 /* Define mobile styles */
