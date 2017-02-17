@@ -6,19 +6,13 @@
           <form (ngSubmit)="register(newsletterForm, $event)" #newsletterForm="ngForm" novalidate>
 
               <label for="contactname">Name</label>
-              <input type="text" id="contactname" name="model.contactname" [(ngModel)]="model.contactname" required>
+              <input type="text" id="contactname" name="model.contactname" [(ngModel)]="model.contactname" required><br>
 
               <label for="contactemail">Email</label>
-              <input type="text" id="contactemail" name="model.contactemail" [(ngModel)]="model.contactemail" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$">
+              <input type="text" id="contactemail" name="model.contactemail" [(ngModel)]="model.contactemail" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"><br>
 
-            <!--  <label for="newstype">Newstype</label>
-              <select id="newstype" name="newstype" [(ngModel)]="model.newstype">
-                <option *ngFor="let item of newsdropdown" [value]="item">{{item}}</option>
-              </select>-->
-
-            <!-- <span> Your name is {{model.contactname}}</span>-->
-            <label for="textarea">Message </label><br><textarea name="name" rows="8" cols="80" id="textarea"></textarea><br>
-            <button type="submit">Submit request</button>
+            <label for="textarea">Message </label><br><textarea name="name" rows="8" cols="50" id="textarea"></textarea><br>
+            <button type="submit">Send Message</button>
           </form>
 
 					<div>

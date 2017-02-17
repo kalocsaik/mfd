@@ -13,7 +13,7 @@ export const RECIPESDATA: IRecipe[] = [{
   imagefour: "app/assets/img/shoe-item.jpg",
   brand: "app/assets/img/asics.jpg",
   stock : 80,
-  price: 86,
+  price: 86.99,
   isfeatured: true,
   likes: 100
 },{
@@ -29,7 +29,7 @@ export const RECIPESDATA: IRecipe[] = [{
   imagefour: "app/assets/img/shoe-item.jpg",
   brand: "app/assets/img/asics.jpg",
   stock : 80,
-  price: 86,
+  price: 86.99,
   isfeatured: true,
   likes: 100
 },
@@ -46,7 +46,7 @@ export const RECIPESDATA: IRecipe[] = [{
   imagefour: "app/assets/img/shoe-item.jpg",
   brand: "app/assets/img/asics.jpg",
   stock : 80,
-  price: 86,
+  price: 86.99,
   isfeatured: true,
   likes: 100
 },
@@ -63,7 +63,7 @@ export const RECIPESDATA: IRecipe[] = [{
   imagefour: "app/assets/img/shoe-item.jpg",
   brand: "app/assets/img/asics.jpg",
   stock : 80,
-  price: 86,
+  price: 86.99,
   isfeatured: true,
   likes: 100
 },
@@ -80,7 +80,7 @@ export const RECIPESDATA: IRecipe[] = [{
   imagefour: "app/assets/img/shoe-item.jpg",
   brand: "app/assets/img/asics.jpg",
   stock : 80,
-  price: 86,
+  price: 86.99,
   isfeatured: true,
   likes: 100
 },
@@ -97,7 +97,7 @@ export const RECIPESDATA: IRecipe[] = [{
   imagefour: "app/assets/img/shoe-item.jpg",
   brand: "app/assets/img/asics.jpg",
   stock : 80,
-  price: 86,
+  price: 86.99,
   isfeatured: true,
   likes: 100
 },
@@ -114,7 +114,7 @@ export const RECIPESDATA: IRecipe[] = [{
   imagefour: "app/assets/img/shoe-item.jpg",
   brand: "app/assets/img/asics.jpg",
   stock : 80,
-  price: 86,
+  price: 86.99,
   isfeatured: true,
   likes: 100
 },
@@ -131,7 +131,7 @@ export const RECIPESDATA: IRecipe[] = [{
   imagefour: "app/assets/img/shoe-item.jpg",
   brand: "app/assets/img/asics.jpg",
   stock : 80,
-  price: 86,
+  price: 86.99,
   isfeatured: true,
   likes: 100
 }

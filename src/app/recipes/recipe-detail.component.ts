@@ -22,17 +22,23 @@ import { DemoDataService } from "../shared/demo-data.service";
 
           <div class="small-12 large-6 detail-item-description">
             <h2>{{recipe.name}}</h2>
-            <div class="row">
-              <div class="small-6 large-6"><img src="{{recipe.brand}}" alt=""></div>
-              <div class="small-6 large-6 text-align-right">
-                <p>kr 947.90</p>
-                <span>{{recipe.price}}</span><br>
-                <span>You save 15.00% </span><br>
+            <div class="row item-description-main-price">
+                <div class="small-12 large-6">
+                <img src="{{recipe.brand}}" alt="">
+                </div>
+                <div class="small-12 large-6 text-align-right">
+                  <p class="new-price">kr 947.90</p>
+                </div>
               </div>
+              <div class="row">
+                <div class="small-12 large-12 text-align-right">
+                  <span class="old-price">kr {{recipe.price}}</span><br>
+                  <span class="price-save">You save 15.00% </span><br>
+                </div>
             </div>
-            <div class="row ">
-              <div class="small-6 large-9">Size <br><input type="text" name="" placeholder="EU Black 45"></div>
-              <div class="small-6 large-3 text-align-right">Amount <br><input type="text" name="" placeholder="1"></div>
+            <div class="row item-description-input">
+              <div class="small-8 large-9"><label for="size">Size</label><br><input type="text" name="size" placeholder="EU Black 45"></div>
+              <div class="small-4 large-3 text-align-right"><label for="amount">Amount</label><br><input type="text" name="amount" placeholder="1" class="amount"></div>
             </div>
             <div class="row">
               <div class="small-12 large-12 text-align-right detail-button"><a href="#">Buy Now</a></div>
@@ -43,24 +49,24 @@ import { DemoDataService } from "../shared/demo-data.service";
         </div>
 
 
-        <div class="row">
+        <div class="row item-tabs">
           <div class="small-12 large-12">
             <div id="tabs">
               <ul>
-                <li><a href="/product/{{recipeid}}#tabs-1">Description</a></li>
-                <li><a href="/product/{{recipeid}}#tabs-2">Shipping</a></li>
-                <li><a href="/product/{{recipeid}}#tabs-3">Sizing</a></li>
+                <li class="tabs active"><a href="/product/{{recipeid}}#tabs-1">Description</a></li>
+                <li class="tabs"><a href="/product/{{recipeid}}#tabs-2">Shipping</a></li>
+                <li class="tabs"><a href="/product/{{recipeid}}#tabs-3">Sizing</a></li>
               </ul>
 
               <div id="tabs-1" class="detail-tabs">
                 <p>{{recipe.longdescription}}</p>
               </div>
-              <div id="tabs-2" class="detail-tabs">
+              <!--<div id="tabs-2" class="detail-tabs">
               <p>{{recipe.longdescription}}</p>
               </div>
               <div id="tabs-3" class="detail-tabs">
                 <p>{{recipe.longdescription}}</p>
-              </div>
+              </div>-->
             </div>
 
           </div>

@@ -1,13 +1,3 @@
-<!--<section class="recipe-list">
-<div *ngFor="let recipe of recipes" [class.featured]="recipe.isfeatured">
-    <img [src]="recipe.image" />
-    <h2>{{recipe.name}}</h2>
-    <p>{{recipe.type}}</p>
-    <p>{{recipe.description}}</p>
- <button (click)="likeRecipe(recipe)">Like recipe</button> {{recipe.likes}}
-    <a [routerLink]="['/product', recipe.id]">View recipe details</a>
-</div>
-</section>-->
 <site-hero></site-hero>
 <div class="wrapper-full">
   <div class="main wrapper">
@@ -16,7 +6,15 @@
         <div class="small-12 large-3" *ngFor="let recipe of recipes">
           <div class="shoe-item">
             <div class="shoe-header">
-              <span class="rating"></span>
+
+              <span class="rating">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </span>
+
               <img [src]="recipe.image" alt="asics running shoe" />
             </div>
             <div class="shoe-content">
@@ -28,7 +26,7 @@
                   <div>
                     <p class="shoe-price">$ {{recipe.price}}</p>
                   </div>
-                  <div>
+                  <div class="shoe-details-icons">
                     <a href=""><i class="fa fa-heart-o fa-lg"></i></a>
                     <a href=""><i class="fa fa-plus-square-o fa-lg"></i></a>
 
